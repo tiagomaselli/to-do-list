@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1c1a1d;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  margin: 0 2rem;
+  height: 100vh;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+h2 {
+  background-color: #39353b;
+  border-radius: .5rem;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+#new-task {
+  flex: 1;
+}
+
+#tasks {
+  flex: 2;
+  width: 100%;
+
+}
+
+label {
+  display: block;
+  margin: 1rem 0 .5rem;
+}
+
+input {
+  background-color: #39353b;
+  border: 0;
+  border-radius: .25rem;
+  color: #fff;
+  padding: .75rem;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  background-color: #39353b;
+  border: 0;
+  border-radius: .25rem;
+  color: #fff;
+  padding: .75rem;
+  width: 100%;
+  height: 6rem;
+}
+
+button {
+  border: 0;
+  border-radius: .25rem;
+  font-size: .9rem;
+  padding: .5rem 1rem;
+  margin: 1rem 0 .5rem;
+}
+
+#btn-add-task {
+  background-color: #6bf394;
+  width: 100%;
+}
+
+#btn-update-task {
+  background-color: #6bf394;
+  width: 69%;
+}
+
+#btn-cancel-task {
+  background-color: #ea5d5d;
+  width: 30%;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #39353b;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  max-width: 100%;
+}
+
+.tasks:nth-child(2) {
+  margin-top: 1rem;
+  border-top: 1px solid #39353b;
+  padding-top: 1rem;
+}
+
+.tasks-title {
+  flex: 1;  
+  font-weight: 1000;
+  word-wrap: break-word;
+  max-width: 14rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.tasks-description {
+  flex: 2;
+  word-wrap: break-word;
+  max-width: 20rem;
+}
+
+#messages {
+  background-color: #39353b;
+  border-radius: .5rem;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  height: 3rem;
+}
+
+.edit-btn {
+  background-color: #6ecbe2;
+  margin-right: .2rem;
+  margin-left: 1rem;
+}
+
+.delete-btn {
+  background-color: #ea5d5d;
+  margin-right: 1rem;
+}
+
+.messageNegative {
+  color: #ea5d5d;
+}
+
+.messagePositive {
+  color: #6bf394;
+}
